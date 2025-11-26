@@ -52,7 +52,7 @@ class MyCustomTask(ExtendedTask):
 env = LeRobot(dm_control_task_desc=MyCustomTask())
 ```
 
-We should consider to add an interface to `ExtendedTask` that standardizes adding objects and new textures to the environment.
+We should consider to add an interface to `ExtendedTask` that standardizes adding objects and new textures.
 
 ### Writing and running tests
 Add test function with "test" in the function name to a script in the [tests](tests/) folder and run
