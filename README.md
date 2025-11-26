@@ -4,13 +4,12 @@ Minimal, extendable LeRobot gym environment.
 ## Installation
 
 ```bash
-# Clone the repository
 git clone https://github.com/uakel/LeRobotHackathonEnv.git
 cd LeRobotHackathonEnv
 uv sync
 ```
 
-## Verify installation
+## Test installation
 Run `uv run test/mj_viewer_rendering.py` and `uv run pytest`.
 
 ## Getting started
@@ -20,7 +19,7 @@ See [`tests/`](tests/)
 `ExtendedTask`s in the [`tasks.py`](src/lerobothackathonenv/tasks.py) script define the observation dict and the reward function. A template implementation "`StdTask`" is provided.
 
 ### Observation space
-The environment provides observations as a dictionary containing:
+The environment provides dict observations containing:
 - `qpos`: Joint positions (6-dimensional, range: -3 to 3)
 - `qvel`: Joint velocities (6-dimensional, range: -10 to 10)
 - `actuator_force`: Actuator forces (6-dimensional, range: -3.35 to 3.35)
@@ -56,15 +55,14 @@ env = LeRobot(dm_control_task_desc=MyCustomTask())
 We should consider to add an interface to `ExtendedTask` that standardizes adding objects and new textures to the environment.
 
 ### Writing and running tests
-Add test to the test folder in functions with "test" in the name and run
+Add test function with "test" in the function name to a script in the [tests](tests/) folder and run
 
 ```bash
-# Run all tests
 uv run pytest
 ```
 
-## Robot Model
-The robot model used is the SO-101. The motor presets are for the STS3215 servo motor model.
+## Robot
+The robot model used is the SO-101. The motor presets are for the STS3215 servo motor.
 
 ## Nano banana 3 style transfer test
 **Prompt:** *Please generate this robot in a realistic scene for sim to real transfer*
