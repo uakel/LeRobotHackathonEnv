@@ -64,13 +64,9 @@ uv run pytest
 ## Robot
 The robot model used is the SO-101. The motor presets are for the STS3215 servo motor.
 
-## Nano banana 3 style transfer test
-**Prompt:** *Please generate this robot in a realistic scene for sim to real transfer*
-
-**Result:**
-![style transfer](assets/nano_banana_transfer.png)
-
-On the top are the input and output images and on the bottom I overlayed both images with 50% opacity. One can see that the geometry is preserved pretty much perfectly.
-
 ## Acknowledgments
 The xml files are taken from: https://github.com/TheRobotStudio/SO-ARM100.git
+
+## TODO
+- [ ] Align xml setup with Georg
+- [ ] Provide export functionality

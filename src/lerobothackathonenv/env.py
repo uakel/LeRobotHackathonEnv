@@ -15,7 +15,7 @@ class LeRobot(Env):
         mj_xml_path: Optional[Path] = None,
         dm_control_task_desc: Optional[ExtendedTask] = None,
     ):
-        default_mj_xml_path = Path(__file__).parent / "assets" / "scene.xml"
+        default_mj_xml_path = Path(__file__).parent / "models" / "xml" / "so101_tabletop_manipulation_generated.xml"
         mj_xml_path_str = str(mj_xml_path or default_mj_xml_path)
         dm_control_physics = mujoco.Physics.from_xml_path(mj_xml_path_str)
         dm_control_task: ExtendedTask = dm_control_task_desc or StdTask()
