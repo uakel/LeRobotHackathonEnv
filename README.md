@@ -13,7 +13,7 @@ uv sync
 **Via pip:**
 With python `>=3.10, <3.13` do
 ```bash
-pip install lerobothackathonenv
+pip install lerobothackathonenv==0.1.1
 ```
 
 ## Running tests and viewing environment in the MuJoCo renderer
